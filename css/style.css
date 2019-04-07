@@ -140,14 +140,14 @@ a {
     0 6px 20px 0 rgba(233, 30, 99, 0.19);
 }
 .row .cool {
-  background: url("../images/cool_nocolor.png") no-repeat 50% 25%;
+  background: url("../images/Cool_NoColor.png") no-repeat 50% 25%;
   border: 0px solid #000000;
   box-shadow: 0 2px 4px 0 rgba(33, 150, 243, 0.1),
     0 1px 5px 0 rgba(33, 150, 243, 0.1);
 }
 .row .cool:hover {
   color: #2196f3;
-  background: url("../images/cool_color.png") no-repeat 50% 15%;
+  background: url("../images/Cool_Color.png") no-repeat 50% 15%;
   border: 0px solid #2196f3;
   box-shadow: 0 4px 8px 0 rgba(33, 150, 243, 0.2),
     0 6px 20px 0 rgba(33, 150, 243, 0.19);
