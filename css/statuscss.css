@@ -1,0 +1,347 @@
+/* Common CSS Start*/
+html,
+body,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  overflow: initial;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f44336;
+}
+.centertext {
+  display: inline-block;
+  margin-top: 2%;
+  font-family: "Fredoka One";
+  font-size: 2.9vw;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 40px white;
+}
+.firstletter {
+  margin-top: 2%;
+  font-family: "Fredoka One";
+  font-size: 2.9vw;
+  font-weight: bold;
+  text-shadow: 0px 0px 40px white;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 27% 27% 27%;
+  margin-top: 5%;
+  width: 100%;
+  padding-bottom: 10px;
+  word-wrap: break-word;
+  justify-content: space-evenly;
+}
+.innerdiv {
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.grid-item {
+  height: 70px;
+  padding: 12px;
+  display: inline-grid;
+  width: 100%;
+  color: #f44336;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 1vw;
+  box-shadow: 0px 0px 2px white;
+
+  font-family: Roboto;
+}
+.grid-item:hover {
+  transition: 0.7s ease 0.1s;
+  cursor: pointer;
+}
+.closebutton {
+  float: right;
+  color: white;
+  right: 0px;
+}
+button {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  color: white;
+  box-shadow: inset 0 0 0 2px white;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+button::before,
+button::after {
+  box-sizing: border-box;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.spin > .crossmark {
+  font-size: 2vw;
+}
+.spin {
+  width: 3.4vw;
+  height: 3.4vw;
+  padding: 0;
+}
+
+.spin::before,
+.spin::after {
+  top: 0;
+  left: 0;
+}
+
+.spin::before {
+  border: 2px solid transparent;
+}
+
+.spin:hover::before {
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+
+  transition: border-top-color 0.15s linear,
+    border-right-color 0.15s linear 0.1s, border-bottom-color 0.15s linear 0.2s;
+}
+
+.spin::after {
+  border: 0 solid transparent;
+}
+
+.spin:hover::after {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left-width: 2px;
+  border-right-width: 2px;
+  transform: rotate(270deg);
+  transition: transform 0.4s linear 0s, border-left-width 0s linear 0.35s;
+}
+.circle {
+  border-radius: 100%;
+  box-shadow: none;
+}
+.circle::before,
+.circle::after {
+  border-radius: 100%;
+}
+.innerdiv:nth-child(3n - 1) .grid-item {
+  position: relative;
+  left: -300px;
+  animation-name: slideinleft;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideinleft;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.innerdiv:nth-child(3n + 1) .grid-item {
+  position: relative;
+  right: -300px;
+  animation-name: slideinright;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  -webkit-animation-name: slideinright;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.innerdiv:nth-child(3n) .grid-item {
+  position: relative;
+  animation-name: bounceIn;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  -webkit-animation-name: bounceIn;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+.innerdiv:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+.headerName {
+  text-align: center;
+}
+/* Common CSS End */
+/* Love CSS Start */
+.loveBody {
+  min-height: 100%;
+  background: linear-gradient(90deg, #ffffff 50%, #f44336 50%);
+}
+.wholeDivLove {
+  min-height: 100vh;
+}
+.loveText {
+  margin-left: 78px;
+}
+.loveLetter {
+  color: #f44336;
+}
+.lovediv:nth-child(3n - 1) .grid-item {
+  background-color: #f44336;
+  color: white;
+}
+.lovediv:nth-child(3n) .grid-item {
+  background-color: white;
+  color: #f44336;
+}
+.lovediv:nth-child(3n + 1) .grid-item {
+  background-color: white;
+  color: #f44336;
+}
+.love-item:hover {
+  background-color: #f44336 !important;
+  color: white !important;
+  box-shadow: inset 0px 0px 20px white;
+  transition: all 0.5s ease-out;
+}
+.funnyBody {
+  min-height: 100%;
+  background: linear-gradient(90deg, #ffffff 50%, #8bc34a 50%);
+}
+.wholeDivFunny {
+  min-height: 100vh;
+}
+/* Love CSS End */
+/* Funny CSS Start */
+.funnyText {
+  margin-left: 100px;
+}
+.funnyLetter {
+  color: #8bc34a;
+}
+.funnydiv:nth-child(3n - 1) .grid-item {
+  background-color: #8bc34a;
+  color: white;
+}
+.funnydiv:nth-child(3n) .grid-item {
+  background-color: white;
+  color: #8bc34a;
+}
+.funnydiv:nth-child(3n + 1) .grid-item {
+  background-color: white;
+  color: #8bc34a;
+}
+.funny-item:hover {
+  background-color: #8bc34a !important;
+  box-shadow: inset 0px 0px 20px white;
+  color: white !important;
+  transition: all 0.5s ease-out;
+}
+/* Funny CSS End */
+@keyframes slider {
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideinright {
+  75% {
+    right: 20px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes slideinrightdelayed {
+  75% {
+    right: 20px;
+  }
+  100% {
+    right: 0px;
+  }
+}
+@keyframes slideinleft {
+  75% {
+    left: 20px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .grid-item {
+    height: 60px;
+    font-size: 2vw;
+    padding: 10px;
+    border-radius: 0px;
+  }
+  .grid-container {
+    grid-template-columns: 50%;
+    justify-content: center;
+  }
+  .closebutton {
+    top: -10px;
+  }
+  .spin > .crossmark {
+    font-size: 4vw;
+  }
+  .spin {
+    width: 5.8vw;
+    height: 5.8vw;
+    padding: 0;
+  }
+  .loveText {
+    font-size: 5.5vw;
+    margin-left: 60px;
+  }
+  .funnyText {
+    font-size: 5.5vw;
+  }
+  .firstletter {
+    font-size: 5.5vw;
+  }
+}

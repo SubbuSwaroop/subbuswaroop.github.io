@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+
+/*body*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #2c3a47;
+  text-decoration: none;
+}
+
+/*Header*/
+
+.header {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.logo {
+  transition: all 5s;
+}
+
+.logo .logoimg {
+  width: 0px;
+  height: 0px;
+  background: url("../images/statuslogoblack.png") no-repeat;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo .logoimg:hover {
+  background: url("../images/statuslogo.png") no-repeat;
+}
+
+.container {
+  color: #2c3a47;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  grid-gap: 20px !important;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.container {
+  /*margin: 20px 200px;*/
+  font-weight: 500;
+  font-size: 17px;
+}
+.row .box {
+  color: #2c3a47;
+  position: relative;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 5px;
+  height: 200px;
+  /* width: auto; */
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  /*box-shadow: 0 2px 4px 0 rgba(231, 76, 60, 0.1), 0 1px 5px 0 rgba(231, 76, 60, 0.10);*/
+}
+
+.row .box:last-child {
+  margin-right: 0px !important;
+}
+
+.row .love {
+  background: url("../images/black-heart.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(231, 76, 60, 0.1),
+    0 1px 5px 0 rgba(231, 76, 60, 0.1);
+}
+.row .love:hover {
+  color: #e74c3c;
+  background: url("../images/red-heart.png") no-repeat 50% 15%;
+  border: 0px solid #e74c3c;
+  box-shadow: 0 4px 8px 0 rgba(231, 76, 60, 0.2),
+    0 6px 20px 0 rgba(231, 76, 60, 0.19);
+}
+.row .friendship {
+  background: url("../images/friendship_nocolor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(80, 200, 120, 0.1),
+    0 1px 5px 0 rgba(80, 200, 120, 0.1);
+}
+.row .friendship:hover {
+  color: #50c878;
+  background: url("../images/friendship_color.png") no-repeat 50% 15%;
+  border: 0px solid #50c878;
+  box-shadow: 0 4px 8px 0 rgba(80, 200, 120, 0.2),
+    0 6px 20px 0 rgba(80, 200, 120, 0.19);
+}
+.row .funny {
+  background: url("../images/funny_nocolor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(255, 235, 59, 0.1),
+    0 1px 5px 0 rgba(255, 235, 59, 0.1);
+}
+.row .funny:hover {
+  color: #ffeb3b;
+  background: url("../images/funny_color.png") no-repeat 50% 15%;
+  border: 0px solid #ffeb3b;
+  box-shadow: 0 4px 8px 0 rgba(255, 235, 59, 0.2),
+    0 6px 20px 0 rgba(255, 235, 59, 0.19);
+}
+.row .sad {
+  background: url("../images/Sad_No_Color.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(96, 125, 139, 0.1),
+    0 1px 5px 0 rgba(96, 125, 139, 0.1);
+}
+.row .sad:hover {
+  color: #607d8b;
+  background: url("../images/Sad_Color.png") no-repeat 50% 15%;
+  border: 0px solid #607d8b;
+  box-shadow: 0 4px 8px 0 rgba(96, 125, 139, 0.2),
+    0 6px 20px 0 rgba(96, 125, 139, 0.19);
+}
+.row .cute {
+  background: url("../images/Cute_NoColor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(233, 30, 99, 0.1),
+    0 1px 5px 0 rgba(233, 30, 99, 0.1);
+}
+.row .cute:hover {
+  color: #e91e63;
+  background: url("../images/Cute_Color.png") no-repeat 50% 15%;
+  border: 0px solid #e91e63;
+  box-shadow: 0 4px 8px 0 rgba(233, 30, 99, 0.2),
+    0 6px 20px 0 rgba(233, 30, 99, 0.19);
+}
+.row .cool {
+  background: url("../images/cool_nocolor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(33, 150, 243, 0.1),
+    0 1px 5px 0 rgba(33, 150, 243, 0.1);
+}
+.row .cool:hover {
+  color: #2196f3;
+  background: url("../images/cool_color.png") no-repeat 50% 15%;
+  border: 0px solid #2196f3;
+  box-shadow: 0 4px 8px 0 rgba(33, 150, 243, 0.2),
+    0 6px 20px 0 rgba(33, 150, 243, 0.19);
+}
+.row .motivational {
+  background: url("../images/Motivational_NoColor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(0, 150, 136, 0.1),
+    0 1px 5px 0 rgba(0, 150, 136, 0.1);
+}
+.row .motivational:hover {
+  color: #009688;
+  background: url("../images/Motivational_Color.png") no-repeat 50% 15%;
+  border: 0px solid #009688;
+  box-shadow: 0 4px 8px 0 rgba(0, 150, 136, 0.2),
+    0 6px 20px 0 rgba(0, 150, 136, 0.19);
+}
+.row .sarcastic {
+  background: url("../images/sarcastic_nocolor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(63, 81, 181, 0.1),
+    0 1px 5px 0 rgba(63, 81, 181, 0.1);
+}
+.row .sarcastic:hover {
+  color: #3f51b5;
+  background: url("../images/sarcastic_color.png") no-repeat 50% 15%;
+  border: 0px solid #3f51b5;
+  box-shadow: 0 4px 8px 0 rgba(63, 81, 181, 0.2),
+    0 6px 20px 0 rgba(63, 81, 181, 0.19);
+}
+.row .religious {
+  background: url("../images/Religion_NoColor.png") no-repeat 50% 25%;
+  border: 0px solid #000000;
+  box-shadow: 0 2px 4px 0 rgba(255, 152, 0, 0.1),
+    0 1px 5px 0 rgba(255, 152, 0, 0.1);
+}
+.row .religious:hover {
+  color: #ff9800;
+  background: url("../images/Religion_Color.png") no-repeat 50% 15%;
+  border: 0px solid #ff9800;
+  box-shadow: 0 4px 8px 0 rgba(255, 152, 0, 0.2),
+    0 6px 20px 0 rgba(255, 152, 0, 0.19);
+}
+.row .box .box-text {
+  position: absolute;
+  bottom: 0px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+
+/*Footer*/
+.footer {
+  /* width: 100%; */
+  background-color: #252f38;
+  padding: 20px;
+  color: #fff !important;
+}
+
+.footer a {
+  color: #fff !important;
+  font-weight: 300;
+}
+
+.footer-left ul {
+  list-style-type: none;
+}
+
+/*Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 70%;
+  }
+}
+/*DEsktop*/
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 20% 20% 20%;
+  }
+}
+
+/*Animations */
+@keyframes slidein {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0px;
+  }
+}
